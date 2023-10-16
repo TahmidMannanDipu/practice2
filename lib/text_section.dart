@@ -29,25 +29,31 @@ Widget textpart(String title, String body) {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: const TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w700,
-                  fontFamily: 'Poppins',
-                  fontStyle: FontStyle.normal),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                title,
+                style: const TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.w700,
+                    fontFamily: 'Poppins',
+                    fontStyle: FontStyle.normal),
+              ),
             ),
             const SizedBox(height: 10),
-            Text(
-              body,
-              style: const TextStyle(fontSize: 18,
-                  fontFamily: 'Poppins',
-                  fontStyle: FontStyle.italic),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                body,
+                style: const TextStyle(fontSize: 18,
+                    fontFamily: 'Poppins',
+                    fontStyle: FontStyle.italic),
+              ),
             ),
             Center(
               child: Column(
                 children: [
-                  const SizedBox(height: 100),
+                  const SizedBox(height: 60),
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
